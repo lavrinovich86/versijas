@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Savs meistars — četri mājaslapas priekšlikumi</title>
-<meta name="description" content="Četri pabeigti mājaslapas dizaina varianti SIA “Savs meistars”. Katru var atvērt pilnā izmērā.">
+<title>Savs meistars — pieci mājaslapas priekšlikumi</title>
+<meta name="description" content="Pieci pabeigti mājaslapas dizaina varianti SIA “Savs meistars”. Katru var atvērt pilnā izmērā.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/archivo-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
@@ -104,9 +104,9 @@
 
   .wall {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: start;
-    gap: 44px 28px;
+    gap: 44px 24px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -175,14 +175,19 @@
   footer p { margin: 0 0 10px; }
   footer p:last-child { margin-bottom: 0; }
 
-  /* Četrās kolonnās apraksti ir trīs rindas; vienāds augstums tur visas
+  /* Piecās kolonnās apraksti ir četras rindas; vienāds augstums tur visas
      lapas vienā sākuma līnijā. Šaurāk rindas sakrīt pašas. */
   @media (min-width: 1081px) {
-    .desc { min-height: 4.5em; }
+    h2 { min-height: 2.48em; }
+    .desc { min-height: 6em; }
   }
 
   @media (max-width: 1080px) {
-    .wall { grid-template-columns: repeat(2, 1fr); gap: 48px 32px; }
+    .wall { grid-template-columns: repeat(3, 1fr); gap: 48px 28px; }
+  }
+
+  @media (max-width: 820px) {
+    .wall { grid-template-columns: repeat(2, 1fr); gap: 48px 28px; }
   }
 
   @media (max-width: 620px) {
@@ -197,7 +202,7 @@
 
   <header>
     <p class="client">Savs meistars, Salaspils</p>
-    <h1>Četri mājaslapas priekšlikumi</h1>
+    <h1>Pieci mājaslapas priekšlikumi</h1>
     <p class="intro">Katrs variants ir pabeigta lapa ar jūsu īstajiem kontaktiem un pakalpojumiem, nevis skice. Zemāk redzama katra lapa vesela, no augšas līdz apakšai. Atveriet to, kas uzrunā, un pasakiet, kurā virzienā strādājam tālāk.</p>
     <p class="intro intro-note">Tekstus, fotogrāfijas un krāsu toni var mainīt jebkurā no tiem, tāpēc izvēlieties pēc noskaņas un uzbūves, ne pēc atsevišķiem vārdiem.</p>
   </header>
@@ -233,7 +238,7 @@
     <li>
       <span class="num">03</span>
       <h2>Labs darbs. Stingrs pamats.</h2>
-      <p class="desc">Plakāta pieeja: balts, spilgti sarkans, ļoti lieli burti un plata fotogrāfija. Skaļākais no četriem.</p>
+      <p class="desc">Plakāta pieeja: balts, spilgti sarkans, ļoti lieli burti un plata fotogrāfija. Skaļākais no pieciem.</p>
       <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v3/" target="_blank" rel="noopener">Atvērt trešo versiju</a>
 
       <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v3/" target="_blank" rel="noopener">
@@ -245,7 +250,7 @@
     <li>
       <span class="num">04</span>
       <h2>Telpa labākai ikdienai.</h2>
-      <p class="desc">Interjera žurnāla noskaņa: silti smilšu toņi, serifa virsraksti un gaisīgs izkārtojums. Mierīgākais no četriem.</p>
+      <p class="desc">Interjera žurnāla noskaņa: silti smilšu toņi, serifa virsraksti un gaisīgs izkārtojums. Mierīgākais no pieciem.</p>
       <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v4/" target="_blank" rel="noopener">Atvērt ceturto versiju</a>
 
       <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v4/" target="_blank" rel="noopener">
@@ -254,12 +259,24 @@
       </a>
     </li>
 
+    <li>
+      <span class="num">05</span>
+      <h2>Vispirms rasējums. Tad būvniecība.</h2>
+      <p class="desc">Tumša rasējumu darbvirsma. Jūsu mājas jumta plāns, fasāde un elektroshēma ar ieslēdzamiem slāņiem. Tehniskākais no pieciem.</p>
+      <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v5/" target="_blank" rel="noopener">Atvērt piekto versiju</a>
+
+      <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v5/" target="_blank" rel="noopener">
+        <img src="assets/v5.webp" width="600" height="1827" loading="lazy"
+             alt="Piektā versija: tumša CAD darbvirsma ar jumta plānu, fasādi un elektroshēmu.">
+      </a>
+    </li>
+
   </ul>
 
   <hr class="rule">
 
   <footer>
-    <p>Visas četras lapas darbojas arī telefonā. Kontaktforma tajās sagatavo vēstuli jūsu e-pasta programmā; tā neko nesūta un datus neglabā.</p>
+    <p>Visas piecas lapas darbojas arī telefonā. Kontaktforma tajās sagatavo vēstuli jūsu e-pasta programmā; tā neko nesūta un datus neglabā.</p>
     <p>Lapas nav pieteiktas Google meklētājam, bet saite darbojas ikvienam, kam to nosūtāt.</p>
   </footer>
 
