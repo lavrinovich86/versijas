@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Savs meistars — četri mājaslapas priekšlikumi</title>
+<meta name="description" content="Četri pabeigti mājaslapas dizaina varianti SIA “Savs meistars”. Katru var atvērt pilnā izmērā.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/archivo-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+  /* Archivo (SIL Open Font License), glabāts lokāli — lapa nav atkarīga no ārēja servera. */
+  @font-face {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(assets/archivo-latin-ext.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: Archivo;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(assets/archivo-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  :root {
+    --wall:   #c9cbc6;
+    --ink:    #1d1f1c;
+    --muted:  #55584f;
+    --edge:   #a7aaa3;
+    --sheet:  #ffffff;
+    --measure: 60ch;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--wall);
+    color: var(--ink);
+    font-family: Archivo, "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    font-synthesis-weight: none;
+  }
+
+  .page {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 64px 28px 96px;
+  }
+
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+  }
+
+  /* ---- ievads ---- */
+
+  .client {
+    margin: 0 0 22px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted);
+  }
+
+  h1 {
+    margin: 0 0 28px;
+    font-size: clamp(2.5rem, 6.2vw, 4.1rem);
+    font-weight: 600;
+    line-height: 0.99;
+    letter-spacing: -0.032em;
+    max-width: 16ch;
+  }
+
+  .intro {
+    max-width: var(--measure);
+    margin: 0 0 14px;
+    font-size: 1.1rem;
+  }
+
+  .intro:last-of-type { margin-bottom: 0; }
+
+  .intro-note { color: var(--muted); }
+
+  .rule {
+    max-width: none;
+    height: 1px;
+    margin: 52px 0 46px;
+    border: 0;
+    background: var(--edge);
+  }
+
+  /* ---- četru lapu siena ---- */
+
+  .wall {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    gap: 44px 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .proof {
+    display: block;
+    margin: 18px 0 0;
+    background: var(--sheet);
+    box-shadow:
+      0 1px 2px rgba(29, 31, 28, 0.20),
+      0 18px 30px -16px rgba(29, 31, 28, 0.42);
+  }
+
+  .proof img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--edge);
+  }
+
+  .proof:hover img,
+  .proof:focus-visible img { border-color: var(--ink); }
+
+  .num {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+  }
+
+  h2 {
+    margin: 0 0 8px;
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.24;
+    letter-spacing: -0.012em;
+  }
+
+  .desc {
+    margin: 0 0 12px;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .open {
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+
+  .open:hover { text-decoration-thickness: 2px; }
+
+  /* ---- kājene ---- */
+
+  footer {
+    max-width: var(--measure);
+    font-size: 0.94rem;
+    color: var(--muted);
+  }
+
+  footer p { margin: 0 0 10px; }
+  footer p:last-child { margin-bottom: 0; }
+
+  /* Četrās kolonnās apraksti ir trīs rindas; vienāds augstums tur visas
+     lapas vienā sākuma līnijā. Šaurāk rindas sakrīt pašas. */
+  @media (min-width: 1081px) {
+    .desc { min-height: 4.5em; }
+  }
+
+  @media (max-width: 1080px) {
+    .wall { grid-template-columns: repeat(2, 1fr); gap: 48px 32px; }
+  }
+
+  @media (max-width: 620px) {
+    .page { padding: 44px 20px 72px; }
+    .wall { grid-template-columns: 1fr; gap: 56px; }
+    .rule { margin: 40px 0 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="client">Savs meistars, Salaspils</p>
+    <h1>Četri mājaslapas priekšlikumi</h1>
+    <p class="intro">Katrs variants ir pabeigta lapa ar jūsu īstajiem kontaktiem un pakalpojumiem, nevis skice. Zemāk redzama katra lapa vesela, no augšas līdz apakšai. Atveriet to, kas uzrunā, un pasakiet, kurā virzienā strādājam tālāk.</p>
+    <p class="intro intro-note">Tekstus, fotogrāfijas un krāsu toni var mainīt jebkurā no tiem, tāpēc izvēlieties pēc noskaņas un uzbūves, ne pēc atsevišķiem vārdiem.</p>
+  </header>
+
+  <hr class="rule">
+
+  <ul class="wall">
+
+    <li>
+      <span class="num">01</span>
+      <h2>Jūsu iecerei. Mūsu meistarība.</h2>
+      <p class="desc">Gaišs papīra fons, sarkans akcents un arhitektūras foto. Kārtīgs, klasisks uzņēmuma tēls.</p>
+      <a class="open" href="https://lavrinovich86.github.io/savs-meistars/" target="_blank" rel="noopener">Atvērt pirmo versiju</a>
+
+      <a class="proof" href="https://lavrinovich86.github.io/savs-meistars/" target="_blank" rel="noopener">
+        <img src="assets/v1.webp" width="600" height="1615"
+             alt="Pirmā versija: gaišs papīra fons, sarkans akcents un mājas fotogrāfija.">
+      </a>
+    </li>
+
+    <li>
+      <span class="num">02</span>
+      <h2>Viss sākas ar labu plānu.</h2>
+      <p class="desc">Tumša rasējumu studija. Mājas skati — aksonometrija, stāva plāns un fasāde — pārslēdzami turpat lapā.</p>
+      <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v2/" target="_blank" rel="noopener">Atvērt otro versiju</a>
+
+      <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v2/" target="_blank" rel="noopener">
+        <img src="assets/v2.webp" width="600" height="1591" loading="lazy"
+             alt="Otrā versija: tumšs rasējumu galds ar mājas aksonometriju.">
+      </a>
+    </li>
+
+    <li>
+      <span class="num">03</span>
+      <h2>Labs darbs. Stingrs pamats.</h2>
+      <p class="desc">Plakāta pieeja: balts, spilgti sarkans, ļoti lieli burti un plata fotogrāfija. Skaļākais no četriem.</p>
+      <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v3/" target="_blank" rel="noopener">Atvērt trešo versiju</a>
+
+      <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v3/" target="_blank" rel="noopener">
+        <img src="assets/v3.webp" width="600" height="1709" loading="lazy"
+             alt="Trešā versija: balts fons, spilgti sarkans un ļoti lieli burti.">
+      </a>
+    </li>
+
+    <li>
+      <span class="num">04</span>
+      <h2>Telpa labākai ikdienai.</h2>
+      <p class="desc">Interjera žurnāla noskaņa: silti smilšu toņi, serifa virsraksti un gaisīgs izkārtojums. Mierīgākais no četriem.</p>
+      <a class="open" href="https://lavrinovich86.github.io/savs-meistars-v4/" target="_blank" rel="noopener">Atvērt ceturto versiju</a>
+
+      <a class="proof" href="https://lavrinovich86.github.io/savs-meistars-v4/" target="_blank" rel="noopener">
+        <img src="assets/v4.webp" width="600" height="1549" loading="lazy"
+             alt="Ceturtā versija: silti smilšu toņi, serifa virsraksti un interjera foto.">
+      </a>
+    </li>
+
+  </ul>
+
+  <hr class="rule">
+
+  <footer>
+    <p>Visas četras lapas darbojas arī telefonā. Kontaktforma tajās sagatavo vēstuli jūsu e-pasta programmā; tā neko nesūta un datus neglabā.</p>
+    <p>Lapas nav pieteiktas Google meklētājam, bet saite darbojas ikvienam, kam to nosūtāt.</p>
+  </footer>
+
+</div>
+</body>
+</html>
