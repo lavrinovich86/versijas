@@ -1,13 +1,13 @@
 # Savs meistars — priekšlikumu vāks
 
-Viena lapa, kas saliek blakus piecas mājaslapas dizaina versijas, lai pasūtītājam jāsūta viena saite, nevis piecas. Katrs variants redzams vesels, no augšas līdz apakšai, un attēls ir saite uz dzīvo versiju.
+Viena lapa, kas saliek blakus sešas mājaslapas dizaina versijas, lai pasūtītājam jāsūta viena saite, nevis sešas. Katrs variants redzams vesels, no augšas līdz apakšai, un attēls ir saite uz dzīvo versiju.
 
 Publicēts: https://lavrinovich86.github.io/versijas/
 
 ## Saturs
 
 - `index.html` — visa lapa, stili iekļauti pašā failā.
-- `assets/v1…v5.webp` — pilnas lapas priekšskati, 600 px plati, pārmēroti no katras versijas `desktop-preview.png` ar Lanczos filtru.
+- `assets/v1…v6.webp` — pilnas lapas priekšskati, 600 px plati, pārmēroti no katras versijas `desktop-preview.png` ar Lanczos filtru.
 - `assets/archivo-*.woff2` — Archivo, latin un latin-ext apakškopas, glabātas lokāli, lai lapa nav atkarīga no Google Fonts. Licence: `assets/Archivo-OFL.txt`.
 - `assets/favicon.svg` — logo zīme no pirmās versijas.
 - `robots.txt` un `<meta name="robots">` — lapa netiek pieteikta meklētājiem, jo tajā ir uzņēmuma īstie kontakti un tā vēl nav apstiprināta publiskošanai. Saite darbojas ikvienam, kam to nosūta.
@@ -21,6 +21,7 @@ Publicēts: https://lavrinovich86.github.io/versijas/
 | 03 | Labs darbs. Stingrs pamats. | [savs-meistars-v3](https://github.com/lavrinovich86/savs-meistars-v3) |
 | 04 | Telpa labākai ikdienai. | [savs-meistars-v4](https://github.com/lavrinovich86/savs-meistars-v4) |
 | 05 | Vispirms rasējums. Tad būvniecība. | [savs-meistars-v5](https://github.com/lavrinovich86/savs-meistars-v5) |
+| 06 | Katrs objekts sākas uz papīra. | [savs-meistars-v6](https://github.com/lavrinovich86/savs-meistars-v6) |
 
 ## Priekšskatu atjaunošana
 
